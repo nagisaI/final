@@ -1,6 +1,36 @@
 @charset "utf-8";
 
-.blue{
+/*cart.html*/
+#delete{
+    margin: 120px right;
+}
+
+#text3 {
+	margin-left: 120px;
+}
+
+/*reji.htmlのcss*/
+h2{
+    text-align: center;
+}
+
+#left{
+    text-align: left;
+}
+
+#center{
+    text-align: center;
+}
+
+#text1 {
+	margin-left: 100px;
+}
+
+table{
+    margin: 3px auto;
+  }
+
+  .blue{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,4 +54,18 @@
   font-weight: bold;
   border-radius: 5px;
   text-align: center;
+ 
 }
+
+/*buy_kakunin.html*/
+#h3{
+    text-align: left;
+}
+
+#text2 {
+	margin-left: 80px;
+}
+
+/*buy_ok.html* 同じ処理のみ完了/
+
+/*<button class="button-001">ボタンデザイン</button> */
