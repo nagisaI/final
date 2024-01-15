@@ -1,17 +1,21 @@
 <?php require 'header.php'; ?>
-<?php require 'db_connect.php'; ?>
 <table>
 <tr><th>文房具ID</th><th>文房具名</th><th>販売会社</th></tr>
+
+<?php require 'db_connect.php'; ?>
 <?php
-    $pdo=new PDO('mysql:host=localhost;dbname=shop;charset=utf8',
-    'USER','PASS');
-foreach ('pdo->query('select * from stationery_data') as $row') {
-        echo '<p>';
-        echo $row['stationery_id'];
-        echo $row['stationery_mei'];
-        echo $row['stationery_company'];
-        echo '<p>';
+    $pdo=new PDO($connect,USER,PASS);
+foreach ($pdo->query('select * from stationery_data') as $row) {
+        echo '<tr>';
+        echo '<td>',$row['stationery_id'], '</td>';
+        echo '<td>',$row['stationery_mei'],'</td>';
+        echo '<td>',$row['stationery_company'],'</td>';
+        echo '</tr>';
+        echo "\n";
     }
 ?>
 </table>
+    <a href="toroku-input.php">新規登録</a>
+    <a href="update-input.php">更新</a>
+    <a href="delete-input.php">削除</a>
 <?php require 'footer.php'; ?>
