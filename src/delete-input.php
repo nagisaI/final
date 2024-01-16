@@ -1,5 +1,7 @@
 <?php require 'header.php'; ?>
 <?php require 'db_connect.php'; ?>
+<h3>文房具情報管理　　　削除画面</h3>
+    <hr>
 <table>
     <tr><th>文房具ID</th><th>文房具名</th><th>販売会社</th></tr>
     <?php

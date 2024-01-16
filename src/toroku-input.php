@@ -1,4 +1,6 @@
 <?php require 'header.php'; ?>
+<h3>文房具情報管理　　　新規登録画面</h3>
+    <hr>
 <p>文房具の情報を追加します。</p>
 <form action="toroku-output.php" method="post">
     文房具ID <input type="text" name="stationery_id"></p>

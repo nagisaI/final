@@ -1,5 +1,5 @@
 <?php require 'header.php'; ?>
-    <h3>文房具情報管理</h3>
+    <h3>文房具情報管理　　　ホーム画面</h3>
     <hr>
     <a href="all.php">一覧</a>
     <a href="toroku-input.php">新規登録</a>
