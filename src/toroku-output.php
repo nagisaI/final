@@ -2,7 +2,6 @@
 <?php require 'db_connect.php'; ?>
 <?php
 $pdo=new PDO($connect,USER,PASS);
-foreach ($pdo->query('select * from stationery_data') as $row){
     $sql=$pdo->prepare('insert into stationery_data values(?, ?, ?)');
     if (empty($_POST['stationery_id'])) {
         echo '文房具IDを入力してください。';
@@ -16,7 +15,6 @@ foreach ($pdo->query('select * from stationery_data') as $row){
     } else {
         echo '追加に失敗しました。';
     }
-}
 ?>
 <a href="home.php">ホームに戻る</a>
 <?php require 'footer.php'; ?>
