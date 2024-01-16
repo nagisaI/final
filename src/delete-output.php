@@ -3,7 +3,7 @@
 <?php
     $pdo=new PDO($connect,USER,PASS);
     $sql=$pdo->prepare('delete from stationery_data where stationery_id=?');
-if ($sql->execute([$_POST['stationery_id']])) {
+if ($sql->execute([$_GET['id']])) {
     echo '削除に成功しました。';
 } else {
     echo '削除に失敗しました。';
